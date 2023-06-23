@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5
+    </title>
+    <style>
+        dialog{
+            background-color: blue;
+            color: aquamarine;
+            margin: 20px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h3>details tags....</h3>
+        <p>this tag is used to specify the additional details on the web page that the user can view or hide on demand</p>
+    </center>
+    <hr>
+    <center>
+        <h3>summary tag</h3>
+        <p>the  <b>html summary</b> tag is used with <b>details</b>tag.it is used as a summary caption or legend for the content of a details elemnt</p>
+    </center> <hr>
+    <details>
+        <summary>html</summary>
+        <h1>html</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque, beatae.</p>
+    </details>
+    <details>
+        <summary>css</summary>
+        <h1>css</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, nostrum?</p>
+    </details>
+    <details>
+        <summary>js</summary>
+        <h1>js</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, nam!</p>
+    </details>
+    <hr>
+    <center>
+        <h3>time tag</h3>
+        <p><b>html time</b>tag is used to define date and time.it displays time value in a 24 hr clock or a precise date in a gregorian calenderin html</p>
+    </center>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt repudiandae eum porro, vitae quas illo temporibus doloremque consequatur! Assumenda iste nisi quaerat tenetur suscipit dolores quis cupiditate doloremque molestias magni!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas  <time>2:30</time>
+        in minima eveniet temporibus modi reprehenderit corrupti suscipit at, minus ipsa, tempora tenetur, qui impedit sed. Repudiandae modi aspernatur sequi ipsam.</p>
+        <hr>
+        <center>
+            <h3>this is dialog tag....</h3>
+            <p><b>this tag to create a new popup dialog on a web page</b></p>
+        </center>
+        <hr>
+        <button type="button" id="opendialog">opendialog</button>
+        <button type="button" id="closedialog">&times;</button>
+        <dialog id="dialogid">
+        <h1>fullstack......!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, non.</p>
+    </dialog>
+    <script>
+        document.getElementById("opendialog").onclick=function(){
+            document.getElementById("dialogid").show();
+        };
+        document.getElementById("closedialog").onclick=function(){
+            document.getElementById("dialogid").close();
+        };
+</body>
+</html>
